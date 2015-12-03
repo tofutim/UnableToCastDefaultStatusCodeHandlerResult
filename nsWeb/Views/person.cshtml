@@ -1,0 +1,18 @@
+﻿@using nsWeb.Models;
+@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase <Person>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Person</title>
+    </head>
+    <body>
+        @if (Model == null)
+        {
+            <h1>No person</h1>
+        }
+        else
+        {
+            <h1>@Model.Wallet.Cash</h1>
+        }
+    </body>
+</html>
